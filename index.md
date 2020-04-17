@@ -5,7 +5,7 @@ Go to [reed website](http://people.reed.edu/~clajelli/).
 You can use the [editor on GitHub](https://github.com/zumiko/zumiko.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 [create an anchor](#jekyll-themes)
-s
+
 
 ### Markdown
 
