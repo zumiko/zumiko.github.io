@@ -5,7 +5,7 @@ Go to [original website](http://people.reed.edu/~clajelli/).
 
 <!-- LinkedIn link -->
   
-  <li class="icon-link-item"><a href="https://www.linkedin.com/in/claire-jellison/" class="icon-link" itemprop="sameAs"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <div class="icon-link-item"><a href="https://www.linkedin.com/in/claire-jellison/" class="icon-link" itemprop="sameAs"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
 <path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
   c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3
