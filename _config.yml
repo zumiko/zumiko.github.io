@@ -1,11 +1,11 @@
 theme: jekyll-theme-cayman
 
 title: CSJ
-description: The description
-
+description: 
 # social-links
 resume_social_links:
   #resume_github_url:            
   #resume_twitter_url:           
   resume_linkedin_url:          "https://www.linkedin.com/in/claire-jellison"
 resume_print_social_links:      true
+
