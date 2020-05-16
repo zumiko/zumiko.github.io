@@ -17,7 +17,4 @@ I just graduated May 2020 from Reed College in Portland, OR as an Economics and 
 </svg>
 </a></li>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zumiko/zumiko.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
