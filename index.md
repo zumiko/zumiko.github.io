@@ -1,8 +1,7 @@
-## A website
 
-Go to [reed website](http://people.reed.edu/~clajelli/). 
+I just graduated May 2020 from Reed College in Portland, OR as an Economics and Mathematics major. I'm particulary intrested in behavioral econ and wrote an undergraduate [thesis](https://github.com/zumiko/thesis) on peer effects with online crowdfunding. In my free time, I like to climb, slackline, visit parks, over analyze tv shows and books, and run on flat surfaces. I don't think I really have a enough to write about to warrant a website, but thought I'd make one and see if things gradually accumulate. 
 
-I just graduated May 2020 from Reed College in Portland, OR as an Economics and Mathematics major. I'm particulary intrested in behavioral econ and wrote an undergraduate thesis on peer effects with online crowdfunding. In my free time, I like to climb, slackline, visit parks, over analyze tv shows and books, and run on flat surfaces. I don't think I really have a enough to write about to warrant a website, but thought I'd make one and see if things gradually accumulate. 
+Go to [original website](http://people.reed.edu/~clajelli/). 
 
 <!-- LinkedIn link -->
   
