@@ -1,0 +1,26 @@
+- layout: left
+  company: NW Permanente 
+  #link: boringcompany.com
+  job_title: Medical Informatics Intern
+  dates: Summer 2019
+  description: | # this will include new lines to allow paragraphs
+    - Generated Excel reports on physician usage of electronic medical record system to track adoption of new features
+    - Organized Lunch and Learn events to teach physicians about upcoming updates and how to use the system more efficiently
+
+- layout: left
+  company: Vacasa
+  #link: boringcompany.com
+  job_title: Analytics Intern
+  dates: Summer 2018
+  description: | # this will include new lines to allow paragraphs
+    - Implemented overall unit quality grading system using SQL
+    - Created Looker Onboarding dashboard to give insight into new unit amenities
+    - Assessed unit and reservation characteristics associated with fraud
+
+- layout: left
+  company: Reed College 
+  #link: boringcompany.com
+  job_title: Introductory Statistics Tutor
+  dates: Spring 2020
+  description: | # this will include new lines to allow paragraphs
+    - Led weekly drop in help sessions for students enrolled in introductory statistics courses to clarify concepts from lecture and help with R based lab reports

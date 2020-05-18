@@ -1,0 +1,65 @@
+# Site
+#repository: sproogen/resume-theme
+#favicon: images/favicon.ico
+
+github: [metadata]
+
+# Personal info
+name: CSJ
+title: Recent Econ/Math graduate
+email: clairesjellison@gmail.com
+website: www.github.com/zumiko
+
+darkmode: false
+
+# Social links
+twitter_username: evensocj
+github_username:  zumiko
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+#instagram_username: chillwildlife
+#linkedin_username: jameswgrant
+# pinterest_username: jekyll
+#youtube_username: globalmtb
+# googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Claire.
+
+  I just graduated May 2020 from Reed College in Portland, OR as an Economics and Mathematics major. I'm particulary intrested in behavioral econ and wrote an undergraduate [thesis](https://github.com/zumiko/thesis) on peer effects with online crowdfunding. In my free time, I like to climb, slackline, and visit parks.
+
+# Projects Section
+# projects_title: Projects
+
+# Experience Section
+# experience_title: Experience
+
+# Education Section
+# educaton_title: Education
+
+# Skills Section
+# more_title: Skills
+#more_content: | # this will include new lines to allow paragraphs
+ # - Python, R, SQL
+ # - Proficient in Spanish 
+ # - Microsoft Office 
+ # - Google Suite 
+
+
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
