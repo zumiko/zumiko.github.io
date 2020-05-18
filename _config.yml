@@ -8,18 +8,18 @@ github: [metadata]
 name: CSJ
 title: Recent Econ/Math graduate
 email: clairesjellison@gmail.com
-website: www.github.com/zumiko
+#website: www.github.com/zumiko
 
 darkmode: false
 
 # Social links
-twitter_username: evensocj
+#twitter_username: evensocj
 github_username:  zumiko
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 #instagram_username: chillwildlife
-#linkedin_username: jameswgrant
+linkedin_username: claire-jellison
 # pinterest_username: jekyll
 #youtube_username: globalmtb
 # googleplus_username: +jekyll
@@ -42,12 +42,12 @@ about_content: | # this will include new lines to allow paragraphs
 # educaton_title: Education
 
 # Skills Section
-# more_title: Skills
-#more_content: | # this will include new lines to allow paragraphs
- # - Python, R, SQL
- # - Proficient in Spanish 
- # - Microsoft Office 
- # - Google Suite 
+more_title: Skills
+more_content: | # this will include new lines to allow paragraphs
+  - Python, R, SQL
+  - Proficient in Spanish 
+  - Microsoft Office 
+  - Google Suite 
 
 
 
