@@ -1,0 +1,65 @@
+
+<script type="text/javascript">
+
+
+var replies = [
+"Sorry the user you have tried to contact is currently unavailable. If you have further concerns please contact our friendly tech bot",
+"????",
+"",
+";^D",
+"Ummmm... ever heard of google?",
+"You have insulted me!",
+"I have just the answer but first can we verify the last four digits of your social security number",
+"I can't hear you. Can you speak up a little?",
+"Talk Shakespearean to me ;^}",
+"Let's not and say we did.",
+"...",
+"If I could only marry two people you would be one of them?",
+"Blah, blah, blah. So how do you feel about globalization?",
+"What is love?\nBaby don't hurt me\nDon't hurt me \nNo more.",
+"Let's get matching tatoos, yeah?",
+"Don't use that tone with me",
+"So how's your sex life?", 
+"Is your tongue comfortable in your mouth right now?", 
+"Congratulations, you are our website's 10000000 visitor this hour. Click continue to claim your prize", 
+"It's a Rave New World we're living in", 
+"Everyday people tie their shoes. It's about time we start beating our shoes." ,
+"I have a WIN WIN WIN solution", 
+"That's what she said"
+
+]
+
+function randomReply() {
+    return replies[Math.floor(Math.random()*replies.length)];
+}
+
+var log = ""
+function display(s) {
+    log += s
+    document.getElementById("rep").innerHTML = log
+}
+
+function triggerReply() {
+    var x = document.getElementById("inputbox")
+    var i = x.elements[0].value + "<br>"
+    x.elements[0].value = ""
+    display("> " + i)
+    display(randomReply()+"<br>")
+    return false
+}
+
+</script>
+
+<form id="inputbox" onsubmit="return triggerReply();" class="my-form" target = "dummy">
+    <input type="text" name="message">
+    <input type="submit" value="Send">
+</form>
+
+<br/>
+<br/>
+It is I, your friendly tech support bot. What would you like to know???
+<br/>
+
+<p id="rep"></p>
+
+<iframe name="dummy" style="display:none;"></iframe>
