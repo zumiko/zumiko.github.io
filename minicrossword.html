@@ -42,19 +42,31 @@ var numCols = 4;
 var numRows = 4;
 var tileOn = 0;
 var hasWon = false;
+var gameNum = 0;
 
 var tiles = [];
 
-println("ACROSS");
-println("1 to beg for, in older times");
-println("2 walk, as a deer");
-println("3 to make again");
-println("4 shirts, casually");
-println("DOWN");
-println("1 a plot of land");
-println("2 not accompanied");
-println("3 sword in fencing");
-println("4 like sweat on lashes");
+var cluesfour = ["to have admitted to wrongdoing, ____ guilty", "walk, as a deer", "to build ____", "shirts, casually", "a plot of land", "not accompanied", "sword in fencing", "caused by water condensation, plural"];
+
+var k = 0;
+var m = 4; 
+var printClues = function(){
+    println("ACROSS");
+    for (k = 0; k < 4; k ++) {
+        println(k + 1 + " " + cluesfour[k]);
+    }
+    println("DOWN");
+    for (m = 4; m < 8; m++) {
+        if (m === 4){
+        println( 1 + " " + cluesfour[m]);
+        }
+        else{
+        println( m + " " + cluesfour[m]);}
+    }
+
+};
+
+printClues();
 
 
 var checkWin = function(){
@@ -119,6 +131,14 @@ Tile.prototype.draw = function() {
     rect(this.x, this.y, this.size, this.size, 0);
     textSize(80);
     textAlign(CENTER, CENTER);
+    fill(13, 10, 13);
+    if (this.num <4){
+    textSize(12);
+    text(this.num + 1, this.x +20, this.y +20);}
+    if (this.num % 4 === 0 && this.num !== 0){
+    textSize(12);
+    text(4 + this.num/4, this.x +20, this.y +20);}
+    textSize(80);
     fill(0, 0, 0);
     text(this.label, this.x+this.size/2, this.y+this.size/2);
 };
@@ -209,16 +229,7 @@ keyReleased = function() {
         }
     }
     if (keyCode === 32){
-        println("ACROSS");
-        println("1 to beg for, in older times");
-        println("2 walk, as a deer");
-        println("3 to make again");
-        println("4 shirts, casually");
-        println("DOWN");
-        println("1 a plot of land");
-        println("2 not accompanied");
-        println("3 sword in fencing");
-        println("4 like sweat on lashes");
+        printClues();             
     }
     
     else{
@@ -226,10 +237,6 @@ keyReleased = function() {
             tiles[tileOn].label = key;
             tiles[tileOn].checkRight();}
     }
-   // for (var i in tiles) {
-     //   tiles[i].handleMouseOver(mouseX, mouseY);
-        
-    //}
 };
 
 
