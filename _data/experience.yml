@@ -1,10 +1,19 @@
+
 - layout: left
+  company: Federal Reserve Bank of Philadelphia 
+  #link: boringcompany.com
+  job_title: Consumer Finance Institute Intern
+  dates: Fall 2020
+  description: | # this will include new lines to allow paragraphs
+    - Research related to consumer finance and health economics 
+ 
+- layout: left 
   company: Whitney Economics
   #link: boringcompany.com
   job_title: Research Analyst Intern
   dates: Summer 2020
   description: | # this will include new lines to allow paragraphs
-    - Writing a CBD skincare supply and demand forecasting report based on online research, interviews, and data analysis
+    - Wrote a CBD skincare supply and demand forecasting report based on online research, interviews, and data analysis
 
 - layout: left
   company: NW Permanente 
