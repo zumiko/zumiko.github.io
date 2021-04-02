@@ -1,20 +1,20 @@
 
 - layout: left
+  company: Texas A&M University 
+  #link: boringcompany.com
+  job_title: Research Assistant 
+  dates: Spring 2021
+  description: | # this will include new lines to allow paragraphs
+    - Assisting professors Ragan Petrie and Marco Castillo with research focused on understanding charitable giving through field experiments 
+
+- layout: left
   company: Federal Reserve Bank of Philadelphia 
   #link: boringcompany.com
   job_title: Consumer Finance Institute Intern
   dates: Fall 2020
   description: | # this will include new lines to allow paragraphs
-    - Research related to consumer finance and health economics 
+    - Assisted Nathan Blascak with various research projects related to health economics and consumer finance
  
-- layout: left 
-  company: Whitney Economics
-  #link: boringcompany.com
-  job_title: Research Analyst Intern
-  dates: Summer 2020
-  description: | # this will include new lines to allow paragraphs
-    - Wrote a CBD skincare supply and demand forecasting report based on online research, interviews, and data analysis
-
 - layout: left
   company: NW Permanente 
   #link: boringcompany.com
