@@ -1,0 +1,629 @@
+
+<!--to test enter file:///Users/CJ/Desktop/code/website/gitsite/zumiko.github.io/minicrossword.html in browser-->
+
+<!DOCTYPE html>
+<!--legal stuff VVV-->
+<!--This work, "KA P.JS", is a derivative of "http://stackoverflow.com/questions/25341597/how-can-khan-academy-computer-programs-be-run-offline-or-on-my-own-website " by Robert Tupelo-Schneck(http://stackoverflow.com/users/394431/robert-tupelo-schneck), used under CC BY. "KA P.JS" is by michael basaj(https://www.khanacademy.org/profile/michaelbasaj/).-->
+<html>
+<head>
+    <title> Reed College Sim </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+</head>
+<body>
+    <h1> Welcome to the Reed College Simulator! </h1>
+    <canvas id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+
+        var processing = new Processing(canvas, function(processing) {
+            processing.size(1200, 600);
+            processing.background(0xFFF);
+
+ 
+            with (processing) {
+
+                
+                
+                // javascript
+
+
+
+
+var currentScene; 
+var people; 
+var oweek;
+var num = -1;
+var oweeknum = 0;
+var name = ' ';
+var namesprint = ' ';
+var players = ['Player 1', 'Player 2', 'Player 3', 'Player 4', 'Player 5', 'Player 6', 'Player 7' , 'Player 8', 'Player 9', 'Player 10', 'Player 11', 'Player 12'];
+var players2 = [];
+var players3 = [];
+var players4 = [];
+var players5 = [];
+var players6 = [];
+var players7 = [];
+var players8 = [];
+var players9 = [];
+var players10 = [];
+var part = 0;
+
+
+
+
+var printPlayers = function(){
+        for (var i in players) {
+            textSize(20);
+            fill(240, 232, 235);
+            text(players[i], 200, 60 + (25 * i));
+        }
+    };
+
+
+var writeNames = function(){
+    textSize(20);
+    fill(240, 232, 235);
+    textAlign(CENTER, CENTER);
+    text(namesprint, 200, 300);
+    };
+
+
+var drawScene1 =function(){
+    currentScene =1;
+    background(240, 240, 240);
+    fill(140, 5, 59);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(80);
+    textAlign(CENTER, CENTER);
+    text("ALTERNATE", 600, 300);
+    //textFont("monospace");
+    textAlign(CENTER, CENTER);
+    text("REED COLLEGE", 600, 380);
+    textSize(30);
+    text("Click to begin", 600, 480);
+
+};
+
+var drawScene2 =function(){
+    
+    var players = ['Player 1', 'Player 2', 'Player 3', 'Player 4', 'Player 5', 'Player 6', 'Player 7' , 'Player 8', 'Player 9', 'Player 10', 'Player 11', 'Player 12'];
+    
+    currentScene = 2;
+    background(153, 29, 29);
+    fill(240, 232, 235);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Enter 12 Names:", 200, 20);
+    printPlayers();
+
+    //write names as typing
+    fill(250, 250, 250);
+    textFont(f);
+    textSize(80);
+    textAlign(CENTER, CENTER);
+    text(name, 600, 300);
+
+
+
+};
+
+var shuffleArray = function(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+   }
+   return array
+};
+
+
+var drawScene3 =function(players){
+    currentScene = 3;
+    background(92, 125, 214);
+    var playersnew = players;
+    if (part == 0) {
+        var playersnew = shuffleArray(playersnew);
+        players2 = playersnew.slice(0, players.length - 1);
+        //println(players2);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var n7 = playersnew[6];
+    var n8 = playersnew[7];
+    var n9 = playersnew[8];
+    var n10 = playersnew[9];
+    var n11 = playersnew[10];
+    var nd = playersnew[11];
+    var oweek = [ n1 + ' and ' + n2 + ' pretend to like \n Hamilton at the ice cream social', n3 + ' explains to their orientation circle leader \n there is no such thing as objective morality', n4 + ' watches Parks and Rec in their room', n5 + '' + n6 + ' and ' + n7 + ' have \n a threeway in ODB', n8 + ' and' + n9 + ' go to the island \n and discuss how Bernie can still win \nthe 2016 election', n10 + ' and ' + n11 + ' strip down \n and climb into the naked tree', nd + ' tries to follow them up the tree \n but slips on Amanda Reeds blood \nand falls to their death' ];
+    fill(240, 232, 235);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Beginning of  \nO-week:", 200, 50);
+    textSize(30);
+    text(oweek[part], 600, 300);
+
+};
+
+
+
+var drawScene4 =function(players){
+    currentScene = 4;
+    background(92, 196, 214);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 7) {
+        var playersnew = shuffleArray(playersnew);
+        players3 = playersnew.slice(0, players.length - 1);
+        //println(players3);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var n7 = playersnew[6];
+    var n8 = playersnew[7];
+    var n9 = playersnew[8];
+    var n10 = playersnew[9];
+    var nd = playersnew[10];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var firstyr = [ nd + ' signs up for 6 classes \n ignoring their advisors pleas and soon perishes', n2 + ' and ' + n3 + ' take up smoking \nin Elliot Circle', n4 + ' and ' + n5 + ' sit in the front of Hum Lecture every morning \n to protest the western canon', n6 + ' and ' + n7 + ' go to the first Hum Lecture,\n take detailed notes then never show up again', n5 + ' and ' + n3 + ' catch geese on the front lawn and get bitten', n8 +  ' becomes an anarchist ', n9 + ' wears red “REED” hoodie everyday', n1 + ' uses a tray to carry their food at Commons', n10 + ' sits in the front row \n and never misses a single Hum Lecture'];
+    fill(240, 232, 235);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("First Year:", 200, 50);
+    textSize(30);
+    text(firstyr[part - 7], 600, 300);
+
+};
+
+
+var drawScene5 =function(players){
+    currentScene = 5;
+    background(242, 223, 126);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 16) {
+        var playersnew = shuffleArray(playersnew);
+        players4 = playersnew.slice(0, players.length - 1);
+        //println(players4);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var n7 = playersnew[6];
+    var n8 = playersnew[7];
+    var n9 = playersnew[8];
+    var nd = playersnew[9];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var heaven = [ n1 + ' and ' + n2 + ' make out at Thesis Parade', n3 + ' stands by hot dogs kiosk \n making small talk with professors ', n4 + ' and ' + n5 + ' stay in the library listening to the drums \n as they finish their final semester projects', n6 + ' joins Dance Corps', n7 +  ' blacks outs', nd + ' slips on champagne \n and tumbles into the bonfire', n8 + ' pretends they have always listened to \n the Talking Heads', n9 + ' is sick and stays in room'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Heaven Electric:", 200, 50);
+    textSize(30);
+    text(heaven[part - 16], 600, 300);
+
+};
+
+
+var drawScene6 =function(players){
+    currentScene = 6;
+    background(99, 147, 225);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 25) {
+        var playersnew = shuffleArray(playersnew);
+        players5 = playersnew.slice(0, players.length - 1);
+        //println(players5);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var n7 = playersnew[6];
+    var n8 = playersnew[7];
+    var nd = playersnew[8];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var secondyr = [ n1 + ' questions their identity', n2 + ' uses all board points in first month \n and becomes a scrounger', n3 + ' becomes a pool hall regular', n4 + ' ' + n5 + ' and ' + n6 + ' are shhhed for \n talking in the library', n1 + ' pretends to know where the sex \n corner in the library is', n2 + 'turns  in ' + nd + 'for academic \n misconduct' + nd + ' is found guilty by honor council \n and sentenced to death ', n7 +  ' switches majors three times', n8 + ' moves into canyon to save on rent', n2 + ' writes problematic Quest article \n and is added to the Thinkery mailing list'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Second Year:", 200, 50);
+    textSize(30);
+    text(secondyr[part - 25], 600, 300);
+
+};
+
+var drawScene7 =function(players){
+    currentScene = 7;
+    background(233, 78, 0);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 34) {
+        var playersnew = shuffleArray(playersnew);
+        players6 = playersnew.slice(0, players.length - 1);
+        //println(players6);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var n7 = playersnew[6];
+    var nd = playersnew[7];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var sincity = [ n1 + ' is kissed at Renn Fayre, \n perpetually refers to it as \n “the one that got away”', n2 + ' and ' + n3 + ' rush to make themed outfits \n in their dorm 10 minutes \n before the parade', nd + ' lines up for human bridge \n but is trampled by seniors \n running out of the library', n4 + '  who repeatedly said “No sleep until renn fayre”,\n accidentally sleeps through renn fayre',  n5 + ' refuses to drink or do drugs \n so that they can be at the top \n of their game for softball', n6 + ' and ' + n7 + ' hook up and \nget chlamydia'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Sin City:", 200, 50);
+    textSize(30);
+    text(sincity[part - 34], 600, 300);
+};
+
+var drawScene8 =function(players){
+    currentScene = 8;
+    background(69, 121, 240);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 41) {
+        var playersnew = shuffleArray(playersnew);
+        players7 = playersnew.slice(0, players.length - 1);
+        //println(players7);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var n6 = playersnew[5];
+    var nd = playersnew[6];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var thirdyear = [ n1 + ' visits Dojo for the first time \n and finds it surprisingly helpful ', n2 + ' ' + n3 + ' and ' + nd + ' \n move in together', nd + ' refuses to do chores \n and is thwacked to death', n4 + ' becomes peer tutor \nfor lovestruck ' + n5, n6 + ' wishes they’d joined more clubs ', n1 + ' and ' + n2 + ' figure out their lives \n standing on laundry vent \n in front of Elliot Hall'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Third Year:", 200, 50);
+    textSize(30);
+    text(thirdyear[part - 41], 600, 300);
+
+};
+
+var drawScene9 =function(players){
+    currentScene = 9;
+    background(208, 76, 244);
+    var playersnew = players;
+    //print("new players")
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 47) {
+        var playersnew = shuffleArray(playersnew);
+        players8 = playersnew.slice(0, players.length - 1);
+        //println(players8);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var n5 = playersnew[4];
+    var nd = playersnew[5];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var lucid = [ n1 + ' wins bug eating contest', n2 + ' complains about how first Renn Fayre\n  was more fun ', n3 + ' and ' + n4 + ' drop acid', n5 + '  wakes up and turns off \n alarm for 4am Stop Making Sense',  nd + ' valiantly gives their life \n defending campus from highschoolers \n as part of Border Patrol'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Lucid Dream:", 200, 50);
+    textSize(30);
+    text(lucid[part - 47], 600, 300);
+
+};
+
+var drawScene10 =function(players){
+    currentScene = 10;
+    background(47, 159, 246);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    if (part == 54) {
+        var playersnew = shuffleArray(playersnew);
+        players9 = playersnew.slice(0, players.length - 1);
+        //println(players9);
+    }
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var n4 = playersnew[3];
+    var nd = playersnew[4];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var fourthyr = [ n1 + ' finally learns how to pronounce “Nietzsche” \n and brings him up in every conversation', n2 + ' enters the Paradox \n looking like a normie and \n receives hostile glances', nd + ' enters Commons barefoot, \n uses a plastic straw, \n and is killed by the mob of onlookers', n3 + ' feels mounting sexual tension \n with thesis advisor ', n4 + ' gains fame for callout posts \n and meme content on Reed Questions'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Fourth Year:", 200, 50);
+    textSize(30);
+    text(fourthyr[part - 54], 600, 300);
+
+};
+
+
+var drawScene11 =function(players){
+    currentScene = 11;
+    background(107, 203, 41 );
+    var playersnew = players;
+    if (part == 60) {
+        var playersnew = shuffleArray(playersnew);
+        players10 = playersnew.slice(0, players.length - 1);
+        //println(players10);
+    }
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    var nd = playersnew[3];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var submarine = [ n1 + ' turns in thesis a month early \n and wears laurels everywhere', n2 + 's computer breaks from water spill night \nbefore thesis is due ', n3 + ' brags about how they probably had Covid \nin February before it was a thing', nd + ' injects fatal dose of hydroxychloroquine \nfrom Reed bio lab in hopes of covid immunity'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Submarine/COVID:", 200, 50);
+    textSize(30);
+    text(submarine[part - 60], 600, 300);
+
+};
+
+
+var drawScene12 =function(players){
+    currentScene = 12;
+    background(242, 159, 66);
+    var playersnew = players;
+    //println(playersnew);
+    //var playersnew = shuffleArray(playersnew);
+    var n1 = playersnew[0];
+    var n2 = playersnew[1];
+    var n3 = playersnew[2];
+    //var players = playersnew.slice(0, players.length - 1);
+    //println("change global");
+    //println(players);
+    var epilogue = [ n1 + ' ' + n2 + ' and ' + n3 + ' live happily ever after \nbinging “Criminal Minds”'];
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(40);
+    textAlign(CENTER, CENTER);
+    text("Fourth Year:", 200, 50);
+    textSize(30);
+    text(epilogue[part - 65], 600, 300);
+
+};
+
+
+var drawScene13 =function(){
+    currentScene = 13;
+    background(2247, 52, 161 );
+    fill(250, 247, 248);
+    var f = createFont("monospace");
+    textFont(f);
+    textSize(80);
+    textAlign(CENTER, CENTER);
+    text("HAPPY BIRTHDAY!!!", 600, 300);
+
+};
+
+
+
+
+
+drawScene1();
+
+
+mouseClicked=function(){
+    if (currentScene === 1) {
+        drawScene2();
+    }
+
+};
+
+
+keyReleased = function() {
+    if (currentScene === 1 && keyCode !== ENTER){
+        drawScene2();
+    }
+    
+    if (currentScene === 2 && keyCode !== ENTER && num < 11){
+        name += String(key);
+        drawScene2();
+    }
+    else if (currentScene === 2 && keyCode === ENTER & num < 11){
+        num += 1;
+        players[num] = name;
+        drawScene2();
+        name = ' ';
+
+    }
+    else if (currentScene === 2 && keyCode === ENTER & num === 11){
+        drawScene3(players);
+    }
+    
+    else if (currentScene === 3 && keyCode === ENTER && part < 7){
+        part += 1;
+        //println(part);
+        drawScene3(players);
+
+    }
+    
+    else if (currentScene === 3 && keyCode === ENTER && part === 7){
+        drawScene4(players2);
+        //var players = players.slice(0, players.length - 1);
+
+    }
+
+    else if (currentScene === 4 && keyCode === ENTER && part < 16){
+        part += 1;
+        //println(part);
+        drawScene4(players2);
+        
+    }
+    
+    else if (currentScene === 4 && keyCode === ENTER && part === 16){
+        drawScene5(players3);
+
+    }
+    
+    else if (currentScene === 5 && keyCode === ENTER && part < 25){
+        part += 1;
+        //println(part);
+        drawScene5(players3);       
+    }
+
+    else if (currentScene === 5 && keyCode === ENTER && part === 25){
+        drawScene6(players4);
+
+    }
+
+    else if (currentScene === 6 && keyCode === ENTER && part < 34){
+        part += 1;
+        //println(part);
+        drawScene6(players4);       
+    }
+
+    else if (currentScene === 6 && keyCode === ENTER && part === 34){
+        drawScene7(players5);
+
+    }
+
+    else if (currentScene === 7 && keyCode === ENTER && part < 41){
+        part += 1;
+        //println(part);
+        drawScene7(players5);       
+    }
+
+    else if (currentScene === 7 && keyCode === ENTER && part === 41){
+        drawScene8(players6);
+
+    }
+
+
+    else if (currentScene === 8 && keyCode === ENTER && part < 47){
+        part += 1;
+        //println(part);
+        drawScene8(players6);       
+    }
+
+    else if (currentScene === 8 && keyCode === ENTER && part === 47){
+        drawScene9(players7);
+
+    }
+
+    else if (currentScene === 9 && keyCode === ENTER && part < 54){
+        part += 1;
+        //println(part);
+        drawScene9(players7);       
+    }
+
+    else if (currentScene === 9 && keyCode === ENTER && part === 54){
+        drawScene10(players8);
+
+    }
+
+    else if (currentScene === 10 && keyCode === ENTER && part < 60){
+        part += 1;
+        //println(part);
+        drawScene10(players8);       
+    }
+
+    else if (currentScene === 10 && keyCode === ENTER && part === 60){
+        drawScene11(players9);
+
+    }
+
+    else if (currentScene === 11 && keyCode === ENTER && part < 65){
+        part += 1;
+        //println(part);
+        drawScene11(players9);       
+    }
+
+    else if (currentScene === 11 && keyCode === ENTER && part === 65){
+        drawScene12(players10);
+
+    }
+
+
+    else if (currentScene === 12 && keyCode === ENTER && part < 67){
+        drawScene13();
+
+    }
+
+
+
+    
+};
+
+
+
+
+
+
+                
+                
+            }
+            if (typeof draw !== 'undefined') processing.draw = draw;
+        });
+    </script>
+</body>
+</html>
