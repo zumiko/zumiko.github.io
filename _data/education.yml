@@ -5,3 +5,11 @@
   
   description: | # this will include new lines to allow paragraphs
    - Studied abroad in Barcelona Fall of 2018  
+
+- layout: left
+  name: University of Pennsylvania
+  dates: Fall 2022
+  qualification: Non-Degree Program
+  
+  description: | # this will include new lines to allow paragraphs
+   - Took CIS 5210 on Artificial Intelligence
