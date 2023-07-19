@@ -1,11 +1,20 @@
 
 - layout: left
+  company: Federal Reserve Bank of Philadelphia
+  #link: boringcompany.com
+  job_title: Sr. Research Assistant/Research Analyst
+  dates: Summer 2021 - Present
+  description: | # this will include new lines to allow paragraphs
+    - Assist Thorsten Drautzburg in empirical macroeconomic research 
+    - Prepare materials for Philadelphia FOMC policy briefings
+
+- layout: left
   company: Texas A&M University 
   #link: boringcompany.com
   job_title: Research Assistant 
   dates: Spring 2021
   description: | # this will include new lines to allow paragraphs
-    - Assisting professors Ragan Petrie and Marco Castillo with research focused on understanding charitable giving through field experiments 
+    - Assisted professors Ragan Petrie and Marco Castillo with research focused on understanding charitable giving through field experiments 
 
 - layout: left
   company: Federal Reserve Bank of Philadelphia 
