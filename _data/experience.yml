@@ -2,7 +2,7 @@
 - layout: left
   company: Federal Reserve Bank of Philadelphia
   #link: boringcompany.com
-  job_title: Sr. Research Assistant/Research Analyst
+  job_title: Research Analyst
   dates: Summer 2021 - Present
   description: | # this will include new lines to allow paragraphs
     - Assist Thorsten Drautzburg in empirical macroeconomic research 
@@ -23,6 +23,7 @@
   dates: Fall 2020
   description: | # this will include new lines to allow paragraphs
     - Assisted Nathan Blascak with various research projects related to health economics and consumer finance
+    - Cleaned and analyzed large (>100GB) credit bureau data 
  
 - layout: left
   company: NW Permanente 
