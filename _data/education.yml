@@ -3,13 +3,13 @@
   dates: 2016 - 2020
   qualification: BA Mathematics and Economics
   
-  description: | # this will include new lines to allow paragraphs
+  description: | 
    - Studied abroad in Barcelona Fall of 2018  
 
 - layout: left
   name: University of Pennsylvania
-  dates: Fall 2022
+  dates: Fall 2022, Fall 2023
   qualification: Non-Degree Program
   
-  description: | # this will include new lines to allow paragraphs
-   - Took CIS 5210 on Artificial Intelligence
+  description: | 
+   - Classes include Artificial Intelligence and Game Theory
