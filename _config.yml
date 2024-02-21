@@ -6,7 +6,7 @@ github: [metadata]
 
 # Personal info
 name: Claire Jellison
-title: Research Analyst
+title: Research Associate
 email: clairesjellison@gmail.com
 #website: www.github.com/zumiko
 
@@ -28,11 +28,12 @@ linkedin_username: claire-jellison
 about_profile_image: images/profile.jpeg
 about_content: | # this will include new lines to allow paragraphs
 
-  I grew up in Bishop, CA. From there, I moved to Portland, OR to attend Reed College. At Reed, I double majored in math and econ 
+  I grew up in [Bishop, CA](https://bishopvisitor.com/). From there, I moved to Portland, OR to attend Reed College. At Reed, I double majored in math and econ 
   and wrote my senior [thesis](https://github.com/zumiko/thesis) on peer effects within online crowdfunding. After graduating, 
-  I interned remotely for the Federal Reserve Bank of Philadelphia and then briefly at Texas A&M. Finally, I moved to Philadelphia
-  to join the Research Department at the Fed where I now work on empirical macro, policy briefings, and improving my 
-  ping pong skills. 
+  I interned remotely for the Federal Reserve Bank of Philadelphia and then briefly at Texas A&M. Then I returned to the Philly Fed
+  to join the Research Department where I now work on empirical macro research, policy briefings, and improving my 
+  ping pong skills.  
+
 
 #Test out a [mini crossword](minicrossword.html). 
 # Projects Section
