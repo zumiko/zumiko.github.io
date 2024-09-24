@@ -1,8 +1,11 @@
 
 - layout: left
   company: Federal Reserve Bank of Philadelphia
-  #link: boringcompany.com
-  job_title: Research Associate, Research Analyst, Sr. Research Assistant
+  job_title: |
+    Research Associate
+    Research Analyst
+    Sr. Research Assistant
+    Machine Learning Research Assistant
   dates: Summer 2021 - Present
   description: | # this will include new lines to allow paragraphs
     - Assist economists in macroeconomic research through processing and analyzing datasets
@@ -10,7 +13,6 @@
 
 - layout: left
   company: Texas A&M University 
-  #link: boringcompany.com
   job_title: Research Assistant
   dates: Spring 2021
   description: | # this will include new lines to allow paragraphs
