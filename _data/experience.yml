@@ -2,10 +2,10 @@
 - layout: left
   company: Federal Reserve Bank of Philadelphia
   job_title: |
-    Research Associate
-    Research Analyst
-    Sr. Research Assistant
-    Machine Learning Research Assistant
+    - Research Associate
+    - Research Analyst
+    - Sr. Research Assistant
+    - Machine Learning Research Assistant
   dates: Summer 2021 - Present
   description: | # this will include new lines to allow paragraphs
     - Assist economists in macroeconomic research through processing and analyzing datasets
